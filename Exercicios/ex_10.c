@@ -1,3 +1,5 @@
+/* programa que repete  */
+
 #include <stdio.h>
 
 int main(){
@@ -5,7 +7,6 @@ int main(){
     int par = 0, impar = 0;
     
     printf("\nDigite 10 valores\n");
-
 
     while(a<10){
     a++;   
@@ -16,13 +17,5 @@ int main(){
     
     }
 
-    printf("\n\nQuantidade de numeros pares: %d\nQuantidade de numeros impares: %d\n\n", par,impar);
-
-     
-
-
-
-
-
-
+    printf("\n\nQuantidade de numeros pares: %d\nQuantidade de numeros impares: %d\n\n", par,impar);  
 }
