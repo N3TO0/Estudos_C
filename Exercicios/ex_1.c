@@ -13,7 +13,7 @@ int main(){
 
     while(numero_inicial <= numero_inteiro_possitivo)
     {
-        numero_somado += numero_inicial ;
+     numero_somado += numero_inicial ;
         
         printf("\nnumero inicial: %d",numero_inicial);
         printf("\nnumero somaro: %d \n",numero_somado);

@@ -13,6 +13,5 @@ int main(){
         a--;
     }
     
-    
-printf("\n\nFim");
+    printf("\n\nFim");
 }
