@@ -79,10 +79,18 @@ void CheckIn()
     {
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede1);
-
-        printf("\nQuantos dias deseja reservar sua estadia: ");
-        scanf("%d", &quantidadeDias1);
-
+        
+        while(1){
+            printf("\nQuantos dias deseja reservar sua estadia: ");
+            scanf("%d", &quantidadeDias1);
+            
+            if (quantidadeDias1 > 0){
+                break;
+            }
+            
+            printf("Reserva necessita ser maior que 0 dias!!");
+        }
+        
         reservado1 = 1;
         printf("\n==================================================\n");
         
@@ -93,9 +101,17 @@ void CheckIn()
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede2);
 
-        printf("\nQuantos dias deseja reservar sua estadia: ");
-        scanf("%d", &quantidadeDias2);
-
+        while(1){
+            printf("\nQuantos dias deseja reservar sua estadia: ");
+            scanf("%d", &quantidadeDias2);
+            
+            if (quantidadeDias2 > 0){
+                break;
+            }
+            
+            printf("Reserva necessita ser maior que 0 dias!!");
+        }
+        
         reservado2 = 1;
         printf("\n==================================================\n");
         
@@ -106,9 +122,17 @@ void CheckIn()
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede3);
 
-        printf("\nQuantos dias deseja reservar sua estadia: ");
-        scanf("%d", &quantidadeDias3);
-
+        while(1){
+            printf("\nQuantos dias deseja reservar sua estadia: ");
+            scanf("%d", &quantidadeDias3);
+            
+            if (quantidadeDias3 > 0){
+                break;
+            }
+            
+            printf("Reserva necessita ser maior que 0 dias!!");
+        }
+        
         reservado3 = 1;
 
         printf("\n==================================================\n");
@@ -120,9 +144,17 @@ void CheckIn()
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede4);
 
-        printf("\nQuantos dias deseja reservar sua estadia: ");
-        scanf("%d", &quantidadeDias4);
-
+        while(1){
+            printf("\nQuantos dias deseja reservar sua estadia: ");
+            scanf("%d", &quantidadeDias4);
+            
+            if (quantidadeDias4 > 0){                
+                break;
+            }
+            
+            printf("Reserva necessita ser maior que 0 dias!!");
+        }
+        
         reservado4 = 1;
 
         printf("\n==================================================\n");
@@ -134,9 +166,17 @@ void CheckIn()
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede5);
 
-        printf("\nQuantos dias deseja reservar sua estadia: ");
-        scanf("%d", &quantidadeDias5);
-
+        while(1){
+            printf("\nQuantos dias deseja reservar sua estadia: ");
+            scanf("%d", &quantidadeDias5);
+            
+            if (quantidadeDias5 > 0){
+                break;
+            }
+            
+            printf("Reserva necessita ser maior que 0 dias!!");
+        }
+        
         reservado5 = 1;
 
         printf("\n==================================================\n");
@@ -160,34 +200,34 @@ void CheckOut(){
     if (reservado1 == 1)
     {
         
-        printf("\n%d - Social\nHospede: %s", quartoId1, hospede1);
+        printf("\n%d - Social\nHospede: %s\n", quartoId1, hospede1);
         
     }
     if (reservado2 == 1)
     {   
 
-        printf("\n%d - Social\nHospede: %s", quartoId2, hospede2);
+        printf("\n%d - Executivo\nHospede: %s\n", quartoId2, hospede2);
 
     }
     if (reservado3 == 1)
     {   
         
-        printf("\n%d - Social\nHospede: %s", quartoId3, hospede3);
+        printf("\n%d - Suite\nHospede: %s\n", quartoId3, hospede3);
 
     }
     if (reservado4 == 1)
     {
         
-        printf("\n%d - Social\nHospede: %s", quartoId4, hospede4);
+        printf("\n%d - Suite Master\nHospede: %s\n", quartoId4, hospede4);
         
     }
     if (reservado5 == 1)
     {
-        printf("\n%d - Social\nHospede: %s", quartoId5, hospede5);
+        printf("\n%d - Suite Presidencial\nHospede: %s\n", quartoId5, hospede5);
         
     }
     
-    printf("\n\n==================================================\n");
+    printf("\n==================================================\n");
     
     if (reservado5 == 1 | reservado4 == 1 | reservado3 == 1 | reservado2 == 1 | reservado1 == 1){
         printf("\nNumero do quarto: ");
@@ -282,7 +322,7 @@ int main()
             break;
 
         default:
-            printf("    Opçao invalida!");
+            printf("\n    Opçao invalida!\n");
         }
         if (opcao == 4)
         {
