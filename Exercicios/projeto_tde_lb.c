@@ -75,7 +75,7 @@ void CheckIn()
     printf("\nInforme codigo do quarto desejado: ");
     scanf("%d", &opcao);
 
-    if (opcao == quartoId1)
+    if (opcao == quartoId1 && reservado1 != 1)
     {
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede1);
@@ -96,7 +96,7 @@ void CheckIn()
         
         printf("\nSua reserva foi realizada!\n\nHospede: %s\nQuarto: %d\nDias: %d\n", hospede1, quartoId1, quantidadeDias1);
     }
-    else if (opcao == quartoId2)
+    else if (opcao == quartoId2 && reservado2 != 1)
     {
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede2);
@@ -117,7 +117,7 @@ void CheckIn()
         
         printf("\nSua reserva foi realizada!\n\nHospede: %s\nQuarto: %d\nDias: %d\n", hospede2, quartoId2, quantidadeDias2);
     }
-    else if (opcao == quartoId3)
+    else if (opcao == quartoId3 && reservado3 != 1)
     {
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede3);
@@ -139,7 +139,7 @@ void CheckIn()
         
         printf("\nSua reserva foi realizada!\n\nHospede: %s\nQuarto: %d\nDias: %d\n", hospede3, quartoId3, quantidadeDias3);
     }
-    else if (opcao == quartoId4)
+    else if (opcao == quartoId4 && reservado4 != 1)
     {
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede4);
@@ -161,7 +161,7 @@ void CheckIn()
         
         printf("\nSua reserva foi realizada!\n\nHospede: %s\nQuarto: %d\nDias: %d\n", hospede4, quartoId4, quantidadeDias4);
     }
-    else if (opcao == quartoId5)
+    else if (opcao == quartoId5 && reservado5 != 1)
     {
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede5);
@@ -184,7 +184,7 @@ void CheckIn()
     }
     else
     {
-        printf("\n    Codigo invalido!!\n");
+        printf("\n    Codigo invalido!! ou Quarto já esta reservado!!\n");
     }
 
     printf("\n==================================================\n");
