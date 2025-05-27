@@ -63,6 +63,19 @@ void Consulta()
     printf("\n==================================================\n");
 }
 
+int leituradosdias(){
+    int dias = 0;
+    while(1){
+            printf("\nQuantos dias deseja reservar sua estadia: ");
+            scanf("%d", &dias);
+            
+            if (dias > 0){
+                return dias;
+            }
+            
+            printf("\nReserva necessita ser maior que 0 dias!!\n");
+    }
+}
 void CheckIn()
 {
 
@@ -80,16 +93,7 @@ void CheckIn()
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede1);
         
-        while(1){
-            printf("\nQuantos dias deseja reservar sua estadia: ");
-            scanf("%d", &quantidadeDias1);
-            
-            if (quantidadeDias1 > 0){
-                break;
-            }
-            
-            printf("Reserva necessita ser maior que 0 dias!!");
-        }
+        quantidadeDias1 = leituradosdias();
         
         reservado1 = 1;
         printf("\n==================================================\n");
@@ -101,16 +105,7 @@ void CheckIn()
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede2);
 
-        while(1){
-            printf("\nQuantos dias deseja reservar sua estadia: ");
-            scanf("%d", &quantidadeDias2);
-            
-            if (quantidadeDias2 > 0){
-                break;
-            }
-            
-            printf("Reserva necessita ser maior que 0 dias!!");
-        }
+        quantidadeDias2 = leituradosdias();
         
         reservado2 = 1;
         printf("\n==================================================\n");
@@ -122,16 +117,7 @@ void CheckIn()
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede3);
 
-        while(1){
-            printf("\nQuantos dias deseja reservar sua estadia: ");
-            scanf("%d", &quantidadeDias3);
-            
-            if (quantidadeDias3 > 0){
-                break;
-            }
-            
-            printf("Reserva necessita ser maior que 0 dias!!");
-        }
+        quantidadeDias3 = leituradosdias();
         
         reservado3 = 1;
 
@@ -144,16 +130,7 @@ void CheckIn()
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede4);
 
-        while(1){
-            printf("\nQuantos dias deseja reservar sua estadia: ");
-            scanf("%d", &quantidadeDias4);
-            
-            if (quantidadeDias4 > 0){                
-                break;
-            }
-            
-            printf("Reserva necessita ser maior que 0 dias!!");
-        }
+        quantidadeDias4 = leituradosdias();
         
         reservado4 = 1;
 
@@ -166,16 +143,7 @@ void CheckIn()
         printf("\nInforme seu primeiro nome: ");
         scanf("%s", hospede5);
 
-        while(1){
-            printf("\nQuantos dias deseja reservar sua estadia: ");
-            scanf("%d", &quantidadeDias5);
-            
-            if (quantidadeDias5 > 0){
-                break;
-            }
-            
-            printf("Reserva necessita ser maior que 0 dias!!");
-        }
+        quantidadeDias5 = leituradosdias();
         
         reservado5 = 1;
 
