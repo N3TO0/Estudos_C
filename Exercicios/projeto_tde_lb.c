@@ -76,6 +76,7 @@ int leituradosdias(){
             printf("\nReserva necessita ser maior que 0 dias!!\n");
     }
 }
+
 void CheckIn()
 {
 
