@@ -2,9 +2,8 @@
 
 int main (){
 
-    char  asterisco = "*";
 
-    printf("%c",asterisco*4);
+    printf("\nolá mundo\n\n");
 
 
 
