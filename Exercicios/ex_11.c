@@ -18,5 +18,6 @@ int main(){
     scanf("%d",&parametro1);
 
     function1(parametro1);
+    printf("toppp");
 
 }
